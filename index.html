@@ -484,6 +484,7 @@
       }
     }
 
+    // Delete last typed digit
     function deletePin() {
       if (enteredPin.length > 0) {
         enteredPin = enteredPin.slice(0, -1);
@@ -492,6 +493,7 @@
       }
     }
 
+    // Clear whole PIN
     function clearPin() {
       enteredPin = "";
       updatePinDisplay();
@@ -562,6 +564,7 @@
       }, 350);
     }
 
+    // Toggle playing background synth melody
     function toggleMusic() {
       const musicBtn = document.getElementById('music-btn');
       if (musicPlaying) {
